@@ -1,3 +1,3 @@
 another responsive solution.
 
-see: []
+see: <http://kohpoll.github.io/blog/2015/10/09/responsive/>
