@@ -1,0 +1,3 @@
+another responsive solution.
+
+see: []

@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  margin: 50px auto;
+}
+p {
+  padding-top: 10px;
+  text-align: center;
+  color: #eee;
+}
+#text {
+  margin: 0;
+  color: #fff;
+  font-size: 64px;
+  text-align: center;
+}
+.w {
+  width: 750px;
+  background-color: #0074D9;
+}
+@media (min-width: 1010px) {
+  .w {
+    width: 990px;
+    background-color: #2ECC40;
+  }
+}
+.w990 .w {
+  width: 990px;
+  background-color: #2ECC40;
+}
+@media (min-width: 1210px) {
+  .w {
+    width: 1190px;
+    background-color: #FF4136;
+  }
+}
+.w1190 .w {
+  width: 1190px;
+  background-color: #FF4136;
+}

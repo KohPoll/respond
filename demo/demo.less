@@ -1,0 +1,54 @@
+// 兼容式media query
+//
+// 用法：
+// & { .mq(1190); ._() {
+//   style for 1190
+// }}
+.mq(@w) {
+
+  @fix: 20;
+  @m: (@w + @fix);
+
+  @media (min-width: ~"@{m}px") { ._ }
+  .w@{w} { ._ }
+}
+
+html,body{margin:0;padding:0;}
+
+.w {
+  margin: 50px auto;
+}
+p {
+  padding-top: 10px;
+  text-align: center;
+  color: #eee;
+}
+#text {
+  margin: 0;
+  color: #fff;
+  font-size: 64px;
+  text-align: center;
+}
+
+.w {
+  width: 750px;
+  background-color: #0074D9;
+}
+& {
+  .mq(990);
+  ._() {
+    .w {
+      width: 990px;
+      background-color: #2ECC40;
+    }
+  }
+}
+& {
+  .mq(1190);
+  ._() {
+    .w {
+      width: 1190px;
+      background-color: #FF4136;
+    }
+  }
+}
